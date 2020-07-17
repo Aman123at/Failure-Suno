@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReadStory">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/book"
+        android:scaleType="centerCrop"
+        android:src="@drawable/book"
+        android:id="@+id/imageview"></ImageView>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:maxLines="2"
+       android:layout_margin="10dp"
+       android:id="@+id/title"
+       android:textAllCaps="true"
+       android:textStyle="bold"
+       android:textColor="#F44336"
+       android:fontFamily="@font/gotham"
+       android:textSize="17dp"
+       android:text="The Lion and The Crow Story."></TextView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:id="@+id/data"
+        android:fontFamily="@font/antqua"
+        android:textSize="17dp"
+        android:text="The Lion and The Crow Story."></TextView>
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

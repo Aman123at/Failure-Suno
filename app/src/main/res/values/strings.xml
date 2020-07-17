@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">FailureSuno</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="str_all_selected">All categories</string>
+
+    <string-array name="job_titles">
+        <item>All categories</item>
+        <item>Failure</item>
+        <item>Struggle</item>
+        <item>Depression</item>
+        <item>Success</item>
+        <item>Career</item>
+        <item>Love</item>
+        <item>Student</item>
+        <item>Business</item>
+
+
+    </string-array>
+    <string-array name="type">
+        <item>Recent Posts</item>
+        <item>Text And Audio</item>
+        <item>Text</item>
+        <item>Audio</item>
+
+
+    </string-array>
+</resources>

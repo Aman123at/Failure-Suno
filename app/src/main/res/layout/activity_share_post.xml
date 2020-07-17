@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".SharePost">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:background="#FFFFFF"
+        android:scaleType="centerCrop"
+        android:padding="120dp"
+
+        android:id="@+id/imageview"
+        android:src="@drawable/ic_notepad"></ImageView>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginVertical="70dp"
+    android:fontFamily="@font/antqua"
+    android:textColor="#F44336"
+    android:id="@+id/title"
+    android:hint="Title of Post"></EditText>
+   <EditText
+       android:layout_width="match_parent"
+       android:fontFamily="@font/antqua"
+       android:textColor="#2196F3"
+       android:layout_marginVertical="130dp"
+       android:hint="Write Your Story Here"
+       android:id="@+id/story"
+       android:layout_marginTop="23dp"
+       android:layout_height="wrap_content"></EditText>
+
+        <com.yalantis.filter.widget.Filter
+            android:id="@+id/filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:text="Submit"
+        android:id="@+id/submitbutton"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:fontFamily="@font/gotham"
+        android:background="@drawable/borderc"
+        android:layout_height="50dp"></Button>
+</LinearLayout>
+</ScrollView>

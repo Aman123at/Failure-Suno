@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="#272626"
+    tools:context=".LoginActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+>   <View
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/ic_group_9"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    
+android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:padding="16dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/gotham"
+                        android:textSize="15dp"
+                        android:text="Your Email"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/username"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                        android:fontFamily="@font/gotham"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/gotham"
+                            android:textSize="15dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Your Password"></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#00BCD4"
+                            android:fontFamily="@font/gotham"
+                            android:layout_alignParentEnd="true"
+                            android:textSize="15dp"
+                            android:id="@+id/forgot_password"
+                            android:layout_marginTop="20dp"
+                            android:text="Forgot?"></TextView>
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/password"
+                        android:inputType="textPassword"
+                        android:backgroundTint="@color/white"
+      android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/gotham"
+                     
+                       />
+
+                    <Button
+                        android:id="@+id/btn_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/borderd"
+                        android:fontFamily="@font/gotham"
+                        android:text="Sign In"
+                        android:textColor="#FFFFFF" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/gotham"
+                            android:textSize="15dp"
+                            android:id="@+id/m"
+                            android:layout_marginTop="20dp"
+                            android:text="Create account?"></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#00BCD4"
+                            android:fontFamily="@font/gotham"
+                            android:layout_marginLeft="4dp"
+                         android:layout_toRightOf="@+id/m"
+                            android:id="@+id/btn_register"
+                            android:textSize="15dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Signup"></TextView>
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+        </LinearLayout>    </ScrollView>
+
+
+
+</RelativeLayout>

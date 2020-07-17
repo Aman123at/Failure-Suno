@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListenStory">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/bar"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"></ProgressBar>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/imageview"
+
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/al"></de.hdodenhof.circleimageview.CircleImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:maxLines="2"
+        android:layout_margin="40dp"
+        android:textColor="#0E0E0E"
+        android:textAllCaps="true"
+        android:id="@+id/title"
+        android:gravity="center"
+        android:fontFamily="@font/gotham"
+        android:textSize="20dp"
+        android:layout_below="@+id/imageview"
+        android:text="Title of the Story "></TextView>
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+      android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:id="@+id/play"
+            android:layout_centerHorizontal="true"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_play_circle_filled_black_24dp"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/play"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:fontFamily="@font/gotham"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/textCurrenttime"></TextView>
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/seekbar"
+                android:layout_height="wrap_content"></SeekBar>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/gotham"
+                android:id="@+id/texttotalduration"></TextView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

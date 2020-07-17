@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6180FC</color>
+    <color name="colorPrimaryDark">#F44336</color>
+    <color name="colorAccent">#F44336</color>
+    <color name="demo_dark_transparent">#24000000</color>
+    <color name="white">#fff</color>
+
+    <color name="black">#000000</color>
+    <array name="colors">
+        <item name="all" type="color">#716C6A</item>
+        <item name="design" type="color">#fc6177</item>
+        <item name="ios" type="color">#3b9aee</item>
+        <item name="android" type="color">#4CAF50</item>
+        <item name="web" type="color">#f4a261</item>
+        <item name="business" type="color">#1ed2bb</item>
+        <item name="research" type="color">#778da9</item>
+        <item name="sales" type="color">#E91E63</item>
+        <item name="quality" type="color">#9f9fed</item>
+        <item name="customer" type="color">#fc6177</item>
+        <item name="other" type="color">#bcbcbc</item>
+    </array>
+
+    <color name="divider">#b2b6c6</color>
+</resources>

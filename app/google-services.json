@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "546004969787",
+    "firebase_url": "https://failuresunoapp.firebaseio.com",
+    "project_id": "failuresunoapp",
+    "storage_bucket": "failuresunoapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546004969787:android:72836201adb485e8e8af1e",
+        "android_client_info": {
+          "package_name": "com.application.failuresuno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546004969787-26cc19e41hvj15epc3vkdsbrl5nsqtsc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrw80iMpCtC_7IQ1T4V1z528NgHdt39c4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546004969787-26cc19e41hvj15epc3vkdsbrl5nsqtsc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

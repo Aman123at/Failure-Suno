@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <View
+        android:id="@+id/dividerTop"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#E4E6E3" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/dividerTop"
+        android:layout_margin="16dp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/avatar"
+        android:inputType="textCapSentences"
+        android:singleLine="true"
+        android:fontFamily="@font/gotham"
+        android:layout_toLeftOf="@+id/text_date"
+        android:layout_toStartOf="@+id/text_date"
+        android:text="Carol Bell"
+        android:textColor="#827f93"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_below="@+id/dividerTop"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="30dp"
+        android:textSize="12dp"
+        android:fontFamily="@font/antqua"
+
+        android:text="Nov 20, 6:12 PM"
+        android:textColor="#000000" />
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+      android:visibility="gone"
+        android:src="@drawable/trash"
+        android:layout_marginRight="0dp"
+         android:layout_marginTop="30dp"
+       android:layout_alignParentEnd="true"
+        />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/type"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#ebebeb" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avatar"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/antqua"
+        android:inputType="textCapSentences"
+        android:id="@+id/text_title"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="32dp"
+        android:text="Title of the story given by a user jBdjskd  sdjsbdjsd jsdjdj sjfjsfjfksfnjfnjfjndfdbfjdbf"
+        android:maxLines="1"
+        ></TextView>
+
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_below="@id/text_story"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+   >
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_title"
+        android:textStyle="bold"
+        android:fontFamily="@font/antqua"
+        android:id="@+id/text_story"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="32dp"
+        android:text="Title of the story given by a user jBdjskd  sdjsbdjsd jsdjdj sjfjsfjfksfnjfnjfjndfdbfjdbf"
+        android:maxLines="2"
+        ></TextView>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:id="@+id/type"
+        android:layout_marginLeft="10dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/frame"
+     ></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/frame"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/antqua"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:id="@+id/view"
+        android:paddingRight="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Read"></TextView>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="70dp"
+        android:layout_below="@id/frame"
+        android:textColor="#000000"
+        android:id="@+id/play"
+        fresco:lottie_rawRes="@raw/playh"
+        fresco:lottie_loop="true"
+        fresco:lottie_autoPlay="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_height="60dp"
+       ></com.airbnb.lottie.LottieAnimationView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/view"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="34dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:id="@+id/share"
+
+            android:src="@drawable/sharea"></ImageView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:layout_below="@id/frame"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gotham"
+        android:background="@drawable/musicborderb"
+        android:textSize="12dp"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/category"
+
+        android:layout_centerHorizontal="true"
+        android:layout_height="24dp"
+        android:text="Business"></TextView>
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="29dp"
+
+        android:id="@+id/heart"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/type"
+        android:layout_marginLeft="7dp"
+        android:src="@drawable/ic_heart"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/likescount"
+        android:fontFamily="@font/gotham"
+        android:text="0 Likes"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@id/heart"
+        android:layout_below="@id/divider"
+        ></TextView>
+
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/type"
+        android:id="@+id/reportpost"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="7dp"
+
+        android:src="@drawable/warn"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report"
+        android:fontFamily="@font/gotham"
+
+        android:layout_marginTop="11dp"
+android:textSize="14dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/divider"
+        ></TextView>
+
+
+
+
+
+
+
+
+</RelativeLayout>

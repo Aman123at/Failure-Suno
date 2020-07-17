@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/ic_group_14"
+    android:id="@+id/root">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:id="@+id/ll"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="23dp"
+                    android:id="@+id/t"
+                    android:text="Sign In"
+                    android:fontFamily="@font/gotham"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="32dp"
+                    android:textColor="#F6F5F5"
+                    android:textStyle="bold"/>
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/phoneAuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="45dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Phone number"
+                                android:fontFamily="@font/gotham"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center_vertical"
+                                android:textSize="19sp" />
+                            <com.hbb20.CountryCodePicker
+                                android:id="@+id/ccp"
+                                android:clickable="false"
+                                android:layout_marginLeft="12dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                app:ccp_defaultNameCode="IN"
+                                app:ccp_contentColor="@color/white"
+                                app:ccp_clickable="false"
+                                android:focusable="false"
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content">
+
+
+                            <EditText
+                                android:id="@+id/phoneText"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:inputType="phone"
+                                android:textColorHint="@color/white"
+                                android:backgroundTint="@color/white"
+                                android:textColor="@color/white"
+                                android:padding="12dp"
+                                android:textSize="16dp"
+                                android:fontFamily="@font/gotham"
+
+                                android:singleLine="true" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="6dp"
+                            android:gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/sendotp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:onClick="verifyCode"
+                    android:fontFamily="@font/gotham"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/borderd"
+                    android:text="Request OTP"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    tools:ignore="OnClick" />
+                <Button
+                    android:id="@+id/verifyotp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:onClick="verifyCode"
+
+                    android:fontFamily="@font/gotham"
+                    android:background="@drawable/bordere"
+                    android:text="Verify OTP"
+                    android:layout_marginTop="30dp"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="#00BCD4"
+                    android:textSize="15sp"
+                    tools:ignore="OnClick" />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".SharePost">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#FFFFFF"
+        android:scaleType="centerCrop"
+      android:padding="130dp"
+
+        android:id="@+id/imageview"
+        android:src="@drawable/ic_podcast"></ImageView>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginVertical="70dp"
+    android:fontFamily="@font/antqua"
+    android:textColor="#F44336"
+    android:id="@+id/title"
+    android:hint="Title of Post"></EditText>
+
+
+        <com.yalantis.filter.widget.Filter
+            android:id="@+id/filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:gravity="center"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:fontFamily="@font/gotham"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/textCurrenttime"></TextView>
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/seekbar"
+                android:layout_height="wrap_content"></SeekBar>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/gotham"
+                android:id="@+id/texttotalduration"></TextView>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:id="@+id/play"
+                android:layout_centerHorizontal="true"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_play_circle_filled_black_24dp"></ImageView>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:text="Upload Audio"
+        android:id="@+id/uploadaudio"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:fontFamily="@font/gotham"
+        android:background="@drawable/borderc"
+        android:layout_height="50dp"></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:text="Submit"
+        android:id="@+id/submitbutton"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:fontFamily="@font/gotham"
+        android:background="@drawable/borderc"
+        android:layout_height="50dp"></Button>
+</LinearLayout>
+</ScrollView>
